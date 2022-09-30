@@ -207,17 +207,17 @@ html, body {
   display: none;
 }
 #map-msg {
-  height: 188px;
+  max-height: max-content;
+  min-height: 12rem;
+  line-height: 2rem;
   padding: 5px;
   text-align: left;
-  line-height: 22px;
-  font-size: 14px;
   padding-left: 3%;
   background-color: #f6f6f6;
 }
 #map {
   width: 100%;
-  height: calc(100% - 188px);
+  flex: 1;
 }
 #map-msg p{
   margin: 8px 0;
@@ -304,4 +304,48 @@ html, body {
 .radius {
   border-radius: 8px;
   overflow: hidden;
+}
+
+.hunliLiucheng-p {
+  margin: 0.5rem; font-size: 1.3rem; width: 100%; text-align: left;
+}
+
+@media screen and (min-width: 200px) {
+  html {font-size: 8px;}
+}
+
+@media screen and (min-width: 320px) {
+  html {font-size: 10px;}
+}
+
+@media screen and (min-width: 360px) {
+  html {font-size: 12px;}
+}
+
+@media screen and (min-width: 413px) {
+  html {font-size: 14px;}
+}
+
+@media screen and (min-width: 540px) {
+  html {font-size: 14px;}
+}
+
+@media screen and (min-width: 640px) {
+  html {font-size: 18px;}
+}
+
+@media screen and (min-width: 700px)  {
+  html {font-size: 20px;}
+}
+
+@media screen and (min-width: 830px)  {
+  html {font-size: 13px;}
+}
+
+@media screen and (min-width: 910px)  {
+  html {font-size: 20px;}
+}
+
+@media screen and (min-width: 1000px)  {
+  html {font-size: 12px;}
 }
