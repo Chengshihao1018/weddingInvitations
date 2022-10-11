@@ -227,8 +227,8 @@
           </div>
         </div>
         <div class="ele-wrap">
-          <div style="display: flex;flex-direction: column; align-items: center; justify-content: center;height: 84%; width: 100%;   position: absolute;
-          top: 50%;
+          <div style="display: flex;flex-direction: column; align-items: center; justify-content: center;height: 80%; width: 100%;   position: absolute;
+          top: 48%;
           left: 0;
           transform: translate(0, -50%);">
             <div class="js-animate animated animation-500" data-animate="zoomIn" data-time="2000">
@@ -378,21 +378,23 @@
           justify-content: center;   
           flex-direction: column;
         ">
-          <p class="js-animate animated" data-animate="bounceInDown" data-time="1000" style="text-align: center; color: rgba(0, 0, 0, 0.7); margin: 0;margin-bottom: 0.5rem; font-weight: 450;">
+          <p class="js-animate animated" data-animate="bounceInRight1" data-time="10"
+            style="text-align: center; color: rgba(0, 0, 0, 0.7); margin: 0;margin-bottom: 0.5rem; font-weight: 450;">
             2014.01 - 2022.10</p>
-          <div style="background-color: rgba(255, 255, 255, 0.6); flex: 1; padding: 0.5rem 1rem; width: 100%;display: flex;
+          <div style="flex: 1; padding: 0.5rem 1rem; width: 100%;display: flex;
         align-items: center;
         justify-content: center;   
-        flex-direction: column;">
-            <div class="js-animate animated" data-animate="bounceInDown" data-time="2000"
+        flex-direction: column;" class="js-animate animated" data-animate="opacityIn" data-time="0">
+            <div class="js-animate animated" data-animate="bounceInLeft1" data-time="300"
               style="flex: 1; width: 100%; background-color: #fff; background-image: url(./public/photo/14.jpg); background-size: 100%; background-repeat: no-repeat;">
             </div>
-            <p class="js-animate animated" data-animate="bounceInDown" data-time="2500"
+            <p class="js-animate animated" data-animate="bounceInRight1" data-time="0"
               style="text-align: center; color: rgba(0, 0, 0, 0.7); margin: 0.5rem; margin-bottom: 0; font-weight: 450;">
               有幸遇见 恰好合拍</p>
-            <p class="js-animate animated" data-animate="bounceInDown" data-time="2500" style="text-align: center; color: rgba(0, 0, 0, 0.7); margin: 0.5rem; font-weight: 450;">山城的浪漫不只是嘉陵江的晚风
+            <p class="js-animate animated" data-animate="bounceInLeft1" data-time="100"
+              style="text-align: center; color: rgba(0, 0, 0, 0.7); margin: 0.5rem; font-weight: 450;">山城的浪漫不只是嘉陵江的晚风
             </p>
-            <div class="js-animate animated" data-animate="bounceInDown" data-time="2500"
+            <div class="js-animate animated" data-animate="bounceInRight1" data-time="300"
               style="flex: 1; width: 100%; background-color: #fff; background-image: url(./public/photo/13.jpg); background-size: 100%; background-repeat: no-repeat;">
             </div>
           </div>
@@ -417,10 +419,10 @@
           flex-direction: column;
           z-index: 100;
         ">
-          <div style="background-color: rgba(255, 255, 255, 0.6); flex: 1; padding: 0.5rem 1rem; width: 100%;display: flex;
+          <div style="flex: 1; padding: 0.5rem 1rem; width: 100%;display: flex;
         align-items: center;
         justify-content: center;   
-        flex-direction: column;">
+        flex-direction: column;" class="js-animate animated" data-animate="opacityIn" data-time="0">
             <div style="display: flex; justify-content: space-between; margin: 1rem 0">
               <p class="js-animate animated" data-animate="bounceInDown" data-time="1000"
                 style="color: rgba(252, 110, 16, 0.7); margin: 0; font-weight: 450;">年年灼灼艳桃李&nbsp&nbsp&nbsp</p>
@@ -528,26 +530,93 @@
         ">
           <div id="map"></div>
           <div id="location-btn"><i class="iconfont" style="font-size: 2rem;">&#xe616;</i></div>
-          <div id="map-msg">
-            <p class="js-animate animated" data-animate="bounceInDown" data-time="0"><i
-                class="iconfont red-icon">&#xe63e;</i>青山区玺合婚礼宴会中心152号</p>
-            <p class="js-animate animated" data-animate="bounceInLeft" data-time="100"><i
-                class="iconfont red-icon">&#xe622;</i>临江大道青山江滩公园2期</p>
-            <p class="js-animate animated" data-animate="bounceInRight" data-time="200"><i
-                class="iconfont red-icon">&#xe72b;</i>江尚礼堂</p>
-            <p class="js-animate animated" data-animate="bounceInUp" data-time="300"><i
-                class="iconfont red-icon">&#xe636;</i>有任何疑问请致电 新郎&新娘</p>
+          <div id="map-msg" style="padding: 0;">
+            <div
+              style="display: flex;justify-content: space-between; align-items: center; background: #fff; padding: 0 0.5rem;">
+              <div style="max-width: 60%;">
+                <p style="font-weight: 450;">玺合婚礼-江尚礼堂</p>
+                <p style="overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;white-space: nowrap; font-size: 1rem;">湖北省武汉市青山区临江大道青山江滩公园2期</p>
+              </div>
+              <button style="
+                height: 2.8rem;
+                background: #1890ff;
+                color: #fff;
+                width: 8rem;
+                border: none;
+                border-radius: 0.3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: max-content;
+              ">
+                <svg t="1665314659801" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="2557" width="16" height="16">
+                  <path
+                    d="M505.344 0C332.288 0 192 140.288 192 315.904c0 173.056 169.984 391.68 315.904 569.856 143.36-181.248 315.904-394.24 315.904-569.856C821.248 140.288 680.96 0 505.344 0z m0 524.288C389.12 524.288 296.96 429.568 296.96 315.904 296.96 199.68 391.68 108.032 504.832 108.032c116.224 0 207.872 94.72 207.872 207.872 3.072 116.224-91.136 208.384-207.36 208.384z"
+                    p-id="2558" fill="#ffffff"></path>
+                  <path
+                    d="M386.56 315.904c0 32.256 13.312 61.952 35.328 83.968C443.392 421.376 476.16 435.2 505.856 435.2c32.256 0 61.952-13.312 83.968-35.328 21.504-21.504 35.328-54.272 35.328-83.968 0-32.256-13.312-61.952-35.328-83.968-21.504-21.504-54.272-35.328-83.968-35.328-32.256 0-61.952 13.312-83.968 35.328-22.016 22.016-35.328 51.712-35.328 83.968zM507.904 1024c-202.752 0-408.064-65.024-408.064-186.368 0-67.584 67.584-124.416 186.368-159.232 21.504-5.632 43.008 5.632 48.64 27.136 5.632 21.504-5.632 43.008-27.136 48.64-89.088 24.064-129.536 59.392-129.536 83.968 0 43.008 129.536 108.032 332.288 108.032s332.288-65.024 332.288-108.032c0-24.064-48.64-61.952-137.728-86.528-21.504-5.632-32.256-27.136-27.136-48.64 5.632-21.504 27.136-32.256 48.64-27.136 124.416 32.256 197.12 91.648 197.12 162.304-7.68 120.832-212.992 185.856-415.744 185.856z"
+                    p-id="2559" fill="#ffffff"></path>
+                </svg>
+                <span style="margin-left: 8px;" id="gotoBtn">去这里</span>
+              </button>
+            </div>
+            <p style="text-align: center;">地址：临江大道青山江滩公园2期</p>
+            <p style="text-align: center;">时间：2022年10月29日 11:00:00</p>
+            <div style="display: flex;justify-content: space-around; align-items: center; padding: 0 10px;">
+              <button style="
+                    height: 2.8rem;
+                    width: 8rem;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: max-content;
+                  ">
+                <span style="margin-left: 8px; font-size: .8rem; color: rgba(0,0,0,0.6);">新郎电话</span>
+                <span style="margin-left: 8px; font-size: 1.2rem;">18888888888</span>
+              </button>
+              <button style="
+                    height: 2.8rem;
+                    width: 8rem;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: max-content;
+                  ">
+                <span style="margin-left: 8px; font-size: .8rem; color: rgba(0,0,0,0.6);">新娘电话</span>
+                <span style="margin-left: 8px; font-size: 1.2rem;">18888888888</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <span class="start"><i class="iconfont" style="color: rgba(0, 0, 0, 0.6);font-size: 2rem;">&#xe606;</i></span>
+  <div id="map-sel-madal"
+    style="display: none; position: absolute; bottom: 0; left: 0; height: 100%; width: 100%; background: rgba(0, 0, 0, 0.6);">
+    <div style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: #fff;" id="map-sel-options">
+      <p data-id="gaode" style="margin: 0; padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">高德地图</p>
+      <p data-id="baidu" style="margin: 0; padding: 1rem; text-align: center;">百度地图</p>
+    </div>
+  </div>
+  <span id="step-btn" class="start"><i class="iconfont"
+      style="color: rgba(0, 0, 0, 0.6);font-size: 2rem;">&#xe606;</i></span>
   <audio id="mp3" src="./public/music/music.mp3" autoplay loop></audio>
   <script src="./public/js/js.fullpage.js"></script>
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=S6EO9oPso0n8aTMvfH1g0aLUX6vGZx1l"></script>
+  <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77">
+  </script>
   <script>
     // 滚屏动画控制
+    let pageNum = 0
 
     if (isMobile !== false) {
       var loadTimer = setInterval(() => {
@@ -569,8 +638,10 @@
       setTimeout(() => {
         document.getElementById('loading-mask').style.display = 'none'
       }, 100);
-      document.getElementsByClassName('wp-inner')[0].fullpage({
+      const pageFullDom = document.getElementsByClassName('wp-inner')[0].fullpage({
         change: function (e) {
+          console.log(e, '---')
+          pageNum = e.cur
           clearTime()
           // 移除动画属性
           forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function (v) {
@@ -602,7 +673,25 @@
             }, time);
           })
         }
-      });
+      })
+      let aotoTimer = setInterval(() => {
+        if (pageNum > 6) clearInterval(aotoTimer)
+        pageFullDom.moveNext(true);
+      }, 12000)
+
+      document.querySelector('#step-btn').addEventListener('click', () => {
+        clearInterval(aotoTimer)
+        pageFullDom.moveNext(true);
+        aotoTimer = setInterval(() => {
+          if (pageNum > 6) clearInterval(aotoTimer)
+          pageFullDom.moveNext(true);
+        }, 12000)
+      })
+      document.querySelector('#map-sel-madal').addEventListener('click', (e) => {
+        if (e.target.id === 'map-sel-madal') {
+          document.querySelector('#map-sel-madal').style.display = 'none'
+        }
+      })
     }
 
     function clearTime() {
@@ -683,6 +772,36 @@
         document.querySelector('#location-btn').addEventListener('click', () => {
           map.panTo(new BMap.Point(mapCenter[0], mapCenter[1]))
         })
+
+        document.querySelector('#gotoBtn').addEventListener('click', () => {
+          document.querySelector('#map-sel-madal').style.display = 'block'
+        })
+
+        document.querySelector('#map-sel-options').addEventListener('click', (e) => {
+          let s = {}
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (pos) {
+              s.slng = pos.coords.longitude
+              s.slat = pos.coords.latitude
+              console.log("经度：" + pos.coords.longitude +
+                "纬度：" + pos.coords.latitude)
+            })
+          } else {
+            console.log("当前系统不支持GPS API")
+          }
+          if (e.target.dataset['id'] === 'gaode') {
+            location.href = `https://uri.amap.com/navigation
+          ?from=
+          &to=${114.382753},${30.644135},玺合婚礼-江尚礼堂
+          &mode=car&callnative=1&coordinate=wgs84&src=mypage`;
+          } else if (e.target.dataset['id']) {
+            location.href = `http://api.map.baidu.com/mobile/direction
+          ?origin=latlng:${s.slng},${s.slat}|name:${s.slocation}
+          &destination=latlng:${e.lat},${e.lng}|name:${e.location}
+          &origin_region=${s.scity}&destination_region=${e.city}
+          &mode=driving&output=html&src=webapp.baidu.openAPIdemo&coord_type=wgs84`;
+          }
+        })
       }
     }
 
@@ -725,6 +844,88 @@
         }
       })
     }
+
+    function funcShare() {
+      $.ajax({
+        async: false,
+        url: "../ShareHandler.ashx",
+        data: {
+          dataurl: location.href.split("#")[0]
+        },
+        success: function (res) {
+          var json = eval("(" + res + ")");
+          console.log(json);
+          var jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ",
+            "onMenuShareWeibo", "onMenuShareQZone"
+          ];
+          wx.config({
+            debug: false,
+            appId: json.wxappid,
+            timestamp: json.timestamp,
+            nonceStr: json.noncestr,
+            signature: json.strSige,
+            jsApiList: jsApiList
+          });
+        }
+      });
+    }
+
+
+    //签名完成
+    wx.ready(function () {
+
+      // console.log("验证完成！！！");
+
+      //分享的头部标题
+      var title = "婚礼邀请";
+      //分享的内容
+      var desc = "我们结婚啦～";
+      var link = location.href.split("#")[0];
+      //分享要显示的右下角小图片
+      var imgUrl = "./public/photo/19.jpg";
+
+      //朋友圈
+      wx.onMenuShareTimeline({
+        title: title,
+        link: link,
+        imgUrl: imgUrl
+      });
+
+      //朋友
+      wx.onMenuShareAppMessage({
+        title: title,
+        desc: desc,
+        link: link,
+        imgUrl: imgUrl
+      });
+
+      //QQ
+      wx.onMenuShareQQ({
+        title: title,
+        desc: desc,
+        link: link,
+        imgUrl: imgUrl
+      });
+
+      //微博
+      wx.onMenuShareWeibo({
+        title: title,
+        desc: desc,
+        link: link,
+        imgUrl: imgUrl
+      });
+
+      //QQ空间
+      wx.onMenuShareQZone({
+        title: title,
+        desc: desc,
+        link: link,
+        imgUrl: imgUrl
+      });
+
+    });
+
+    funcShare();
   </script>
 </body>
 
