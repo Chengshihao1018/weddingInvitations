@@ -209,12 +209,12 @@ html, body {
 }
 #map-msg {
   max-height: max-content;
-  min-height: 12rem;
+  min-height: 14rem;
   line-height: 2rem;
   padding: 5px;
   text-align: left;
   padding-left: 3%;
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
 }
 #map {
   width: 100%;
@@ -230,10 +230,11 @@ html, body {
 }
 #location-btn {
   position: absolute;
-  bottom: 188px;
+  bottom: 16rem;
   right: 4px;
   color: #555;
   padding: 6px;
+  z-index: 1000;
 }
 
 .full-bg, .photo-box {

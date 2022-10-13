@@ -878,6 +878,13 @@
   animation-name: bounceInLeft;
 }
 
+.bounceInLeft1 {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+}
+
 @-webkit-keyframes bounceInRight {
   from, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -949,6 +956,13 @@
 .bounceInRight {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
+}
+
+.bounceInRight1 {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
 }
 
 @-webkit-keyframes bounceInUp {
@@ -1242,6 +1256,70 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+    font-size: 1rem;
+  }
+  50% {
+    opacity: 0.8;
+    font-size: 1.3rem;
+  }
+  100% {
+    opacity: 1;
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+    font-size: 1rem;
+  }
+  50% {
+    opacity: 0.8;
+    font-size: 1.3rem;
+  }
+  100% {
+    opacity: 1;
+    font-size: 1.2rem;
+  }
+}
+
+.fadeIn1 {
+  -webkit-animation-name: fadeIn1;
+  animation-name: fadeIn1;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes opacityIn {
+  from {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  to {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@keyframes opacityIn {
+  from {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  to {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.opacityIn {
+  -webkit-animation-name: opacityIn;
+  animation-name: opacityIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
 }
 
 @-webkit-keyframes fadeInDown {
